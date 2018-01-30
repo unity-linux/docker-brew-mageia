@@ -60,7 +60,7 @@ fi
 
 if [ ! -z $mirror ]; then
         # If mirror provided, use it exclusively
-        reposetup="--disablerepo=* --repofrompath=mgarel,$mirror/media/core/release/ --repofrompath=mgaup,$mirror/media/core/updates/ --enablerepo=mgarel --enablerepo=mgaup"
+        reposetup="--nogpgcheck --disablerepo=* --repofrompath=mgarel,$mirror/media/core/release/ --repofrompath=mgaup,$mirror/media/core/updates/ --enablerepo=mgarel --enablerepo=mgaup"
 fi
 
 if [ -z $mirror ]; then
