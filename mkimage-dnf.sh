@@ -135,7 +135,7 @@ EOF
 rootfsSuffix=
 
 if [ ! -z $pkgmgr ]; then
-    rootfsSuffix="-$pkgmgr"
+    rootfsSuffix="-${pkgmgr}"
 fi
 
 if [ ! -z $systemd ]; then

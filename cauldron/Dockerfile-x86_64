@@ -1,0 +1,7 @@
+# Dockerfile to create Unity Linux base images
+# Create base image with mkimage-dnf.sh script
+#
+
+FROM scratch
+MAINTAINER "JMiahMan" <JMiahMan@unity-linux.org>
+ADD rootfs-systemd-x86_64.tar.xz /
